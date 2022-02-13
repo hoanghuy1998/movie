@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.fs-16 {
+  font-size: 1rem !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+  line-height: 38px !important;
+}
+.line-5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.line-7 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.activeTab {
+  color: red !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.review {
+  height: 10rem;
+  margin-top: -10rem !important;
+  width: 50rem;
+}
+.poster {
+  min-width: 10rem;
+  height: 10rem;
+}
+.btnplay {
+  margin-right: -0.5rem !important;
+  margin-top: -0.25rem !important;
+}
+.playVideo {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.playVideo:hover {
+  transform: scale(1.2);
+}
+#start,
+.startHalf {
+  font-size: 1rem !important;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  color: #ff9601bf;
+}
+.noAvatar {
+  width: 3rem !important;
+  height: 3rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  font-size: 2rem;
+}
+.nav-link:hover {
+  color: blue !important;
+}
+.active {
+  text-decoration: none !important;
+  color: red !important;
+}
+.active:hover,
+.navbarScroll h4:hover {
+  color: blue !important;
+}
+.h-390 {
+  height: 390px !important;
+}
+.logo:hover {
+  color: #61dafb !important;
+}
+.navbarScroll h4 {
+  transition: all 0.3s;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.overlayHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transform: translateY(100%);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.overlayHoverImg:hover .overlayHover {
+  animation: ease slider 1s forwards;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slider {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(20%);
+  }
+}
