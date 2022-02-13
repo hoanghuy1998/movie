@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { OverlayTrigger, Row, Col, Tooltip, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import movieService from "../sevicers/movieService";
 import ActionTypes from "../stores/action";

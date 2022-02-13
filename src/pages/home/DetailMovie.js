@@ -39,9 +39,7 @@ const DetailMovie = () => {
         break;
     }
   }, []);
-  const format2 = (n, currency) => {
-    return n?.toFixed(1).replace(/(\d)(?=(\d{3})+\.)/g, "$1,") + " " + currency;
-  };
+
   useEffect(() => {
     movieService.getComment(detailMovie?.id).then((res) => {
       setComments(res.data.results);
